@@ -9,7 +9,7 @@ resource "aws_vpc" "main" {
 module "gurus_webserver" {
   # AC: Reference your other module via the Spacelift module registry
   source  = "spacelift.io/adamconnelly/aa-dev/gururaj"
-  version = "0.0.1"
+  version = "0.0.2"
 
   vpc_id         = aws_vpc.main.id
   cidr_block     = "10.0.0.0/16"
