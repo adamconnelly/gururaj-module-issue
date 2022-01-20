@@ -1,5 +1,8 @@
 version: "1"
-module_version: 0.0.2
+module_version: 0.0.3
+terraform_versions:
+  - "0.12.27"
+  - "0.12.28"
 
 test_defaults:
   before_init: ["terraform fmt -check"]
